@@ -5,8 +5,9 @@ module Trove
   class Client
 
     include Contributors
-    include Titles
     include Records
+    include Search
+    include Titles
 
     def initialize(options={})
       @api_key = options[:key]
