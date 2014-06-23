@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["query-string"]
   spec.email         = ["atimofeev@reactant.ru"]
   spec.summary       = %q{Simple wrapper for interacting with Trove (http://trove.nla.gov.au/) API}
-  spec.description   = %q{API overview http://help.nla.gov.au/trove/building-with-trove/api}
+  spec.description   = %q{API overview http://help.nla.gov.au/trove/building-with-trove/api-technical-guide}
   spec.homepage      = ""
   spec.license       = "MIT"
 
