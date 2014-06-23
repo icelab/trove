@@ -2,6 +2,7 @@ module Trove
   module Titles
 
     # List/get newspaper titles
+    # http://troveconsole.herokuapp.com/#gettitles
 
     def titles(options={})
       response = connection.get do |req|

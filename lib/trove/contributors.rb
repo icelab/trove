@@ -2,6 +2,7 @@ module Trove
   module Contributors
 
     # List/get Trove contributors
+    # http://troveconsole.herokuapp.com/#getcontributors
 
     def contributors
       response = connection.get do |req|
