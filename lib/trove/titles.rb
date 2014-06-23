@@ -27,24 +27,18 @@ module Trove
     end
 
     def title_articles_count(title_id)
-      response = connection.get do |req|
-        req.url 'result', {q: ' ', zone: 'newspaper', 'l-title' => title_id}
-      end
-      response.body.response.zone.first.records.total
+      response = search_newspaper(' ', {'l-title' => title_id})
+      response.zone.first.records.total
     end
 
     def title_comments_count(title_id)
-      response = connection.get do |req|
-        req.url 'result', {q: 'has:comments', zone: 'newspaper', 'l-title' => title_id}
-      end
-      response.body.response.zone.first.records.total
+      response = search_newspaper('has:comments', {'l-title' => title_id})
+      response.zone.first.records.total
     end
 
     def title_tags_count(title_id)
-      response = connection.get do |req|
-        req.url 'result', {q: 'has:tags', zone: 'newspaper', 'l-title' => title_id}
-      end
-      response.body.response.zone.first.records.total
+      response = search_newspaper('has:tags', {'l-title' => title_id})
+      response.zone.first.records.total
     end
 
   end
