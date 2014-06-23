@@ -6,6 +6,7 @@ module Trove
 
     include Contributors
     include Titles
+    include Records
 
     def initialize(options={})
       @api_key = options[:key]
