@@ -3,7 +3,10 @@ module Trove
 
     # List/get Trove contributors
 
-    def contributor(id)
+    def contributor(contributor_id)
+      response = connection.get do |req|
+        req.url "contributor/#{contributor_id.upcase}"
+      end
     end
 
   end
