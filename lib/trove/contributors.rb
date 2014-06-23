@@ -18,7 +18,7 @@ module Trove
     end
 
     def contributor_full(contributor_id)
-      contributor(contributor_id, {reclevel: 'full'})
+      contributor(contributor_id, reclevel: 'full')
     end
 
   end
