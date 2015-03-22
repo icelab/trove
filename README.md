@@ -28,7 +28,7 @@ Ruby wrapper for the [Trove (trove.nla.gov.au) API](http://help.nla.gov.au/trove
 
 #### Get get the particular article including article text
 
-    trove.article_incliude_text(41697877)
+    trove.article_include_text(41697877)
 
 #### Search among the all data
 
